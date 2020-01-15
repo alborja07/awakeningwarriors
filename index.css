@@ -1,0 +1,34 @@
+nav {
+  background-color: #211710;
+}
+nav a {
+  color: #FCE7E0;
+}
+.life-coaching-container,
+.personal-training-container,
+.spiritual-retreat-container {
+  display: flex;
+  justify-content: center;
+}
+.life-coaching-container {
+  background-color: #D6D3CF;
+}
+.life-coaching-container img {
+  width: 30%;
+  border-radius: 50%;
+}
+.personal-training-container {
+  background: #211710;
+  background: linear-gradient(90deg, #211710 0%, #9e0303 45%, #d6d3cf 100%);
+}
+.personal-training-container img {
+  width: 30%;
+  border-radius: 50%;
+}
+.spiritual-retreat-container {
+  background-color: #F7CDC0;
+}
+.spiritual-retreat-container img {
+  width: 30%;
+  border-radius: 50%;
+}
