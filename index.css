@@ -45,7 +45,7 @@ nav a {
 .spiritual-retreat-container {
   display: flex;
   justify-content: center;
-  padding: 40px 50px;
+  padding: 20px 50px;
   color: #00494F;
 }
 .life-coaching-container img,
@@ -54,6 +54,7 @@ nav a {
   width: 30%;
   border-radius: 1%;
   box-shadow: 2px 2px 8px black;
+  margin: 50px;
 }
 .coachtext,
 .traintext,
@@ -70,24 +71,49 @@ nav a {
   flex: wrap;
 }
 .about img {
-  margin: 3%;
   width: 30%;
-  border-radius: 1%;
-  box-shadow: 2px 2px 8px black;
+  justify-content: flex-end;
+  align-items: right;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 .about .about-text {
   width: 40%;
-  padding: 50px 80px;
+  padding: 50px 150px;
+}
+.about .about-text h2 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 50px;
+  margin: 50px ;
+  text-align: right;
+}
+.about .about-text h4 {
+  color: #cfcfcf;
 }
 .testimonials-carousel {
   text-align: center;
+  height: 15vh;
+  margin: 8%;
 }
 .testimonials-carousel .testimony {
-  padding: 10px 200px;
+  padding: 10px 10px;
 }
 footer {
   background-color: #000000;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   padding: 20px;
+  color: white;
+  text-align: center;
+}
+footer .social-media {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+footer .social-media a {
+  text-align: center;
+  align-items: center;
 }
