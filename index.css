@@ -1,19 +1,29 @@
+@import url('../normalize.css');
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 nav {
-  background-color: #211710;
+  background-color: #00494f;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 nav a {
-  color: #FCE7E0;
+  color: #cacfd2;
   text-decoration: none;
+}
+.background-image {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 .life-coaching-container,
 .personal-training-container,
 .spiritual-retreat-container {
   display: flex;
   justify-content: center;
-  padding: 50px 60px;
+  padding: 100px 50px;
+  color: #00494F;
 }
 .coachtext,
 .traintext,
@@ -21,31 +31,37 @@ nav a {
   padding: 50px 60px;
   width: 40%;
 }
-.life-coaching-container {
-  background-color: #D6D3CF;
-}
-.life-coaching-container img {
+img {
   width: 30%;
   border-radius: 50%;
   box-shadow: 2px 2px 8px black;
 }
-.personal-training-container {
-  background: #211710;
-  background: linear-gradient(90deg, #211710 0%, #9e0303 20%, #d6d3cf 100%);
-}
-.personal-training-container .traintext {
+.traintext {
   text-align: right;
 }
-.personal-training-container img {
-  width: 30%;
-  border-radius: 50%;
-  box-shadow: 2px 2px 8px black;
+.photo-break {
+  background-image: url('images/boxing.jpg');
+  opacity: 0.4;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  background-size: cover;
 }
-.spiritual-retreat-container {
-  background-color: #F7CDC0;
+.photo-break .quote {
+  color: black;
+  font-size: 2rem;
+  padding: 200px;
+  text-align: center;
+  font-family: 'Arvo', serif;
 }
-.spiritual-retreat-container img {
-  width: 30%;
-  border-radius: 50%;
-  box-shadow: 2px 2px 8px black;
+.testimonials-carousel {
+  text-align: center;
+}
+.testimonials-carousel .testimony {
+  padding: 10px 200px;
+}
+footer {
+  background-color: #17A1AB;
+  display: flex;
+  justify-content: center;
 }

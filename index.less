@@ -1,11 +1,18 @@
+@import url('../normalize.css');
+body {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+//#006e7f, #00494f, #17a1ab #7f868e, #cacfd2
+
 nav {
-    background-color: #211710;
+    background-color: #00494f;
     display: flex;
     justify-content: space-around;
-align-items: center;
+    align-items: center;
 
     a {
-       color: #FCE7E0; 
+       color: #cacfd2; 
        text-decoration: none;
 
        
@@ -13,12 +20,20 @@ align-items: center;
     
 }
 
+.background-image {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
+
+
 .life-coaching-container, 
 .personal-training-container, 
 .spiritual-retreat-container {
     display: flex;
     justify-content: center;
-    padding: 50px 60px; 
+    padding: 100px 50px; 
+    color: #00494F;
+
 }
 
 .coachtext, .traintext,
@@ -27,37 +42,52 @@ align-items: center;
     width: 40%;
 }
 
-.life-coaching-container {
-    background-color: #D6D3CF;
+
     
    img {
         width: 30%;
         border-radius: 50%;
         box-shadow: 2px 2px 8px black;;
     }
-}
 
-.personal-training-container {
-    background: rgb(33,23,16);
-    background: linear-gradient(90deg, rgba(33,23,16,1) 0%, rgba(158,3,3,1) 20%, rgba(214,211,207,1) 100%);
-   
     .traintext {
         text-align: right;
     }
-    img {
-        width: 30%;
-        border-radius: 50%;
-        box-shadow: 2px 2px 8px black;;
+    
+    .photo-break {
+        .quote{
+        // width: 50%;
+        color: black;
+        font-size: 2rem;
+        padding: 200px;
+        text-align: center;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        font-family: 'Arvo', serif;
+        }
 
-    }
+        background-image: url('images/boxing.jpg');
+         opacity: 0.4;
+         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+         filter: grayscale(100%);
+        background-size: cover;
+
 }
 
-.spiritual-retreat-container {
-    background-color: #F7CDC0;
-    img {
-        width: 30%;
-        border-radius: 50%;
-        box-shadow: 2px 2px 8px black;;
 
+.testimonials-carousel {
+   
+      text-align: center;
+
+    .testimony {
+       padding: 10px 200px;
     }
+} 
+footer {
+
+    background-color: #17A1AB ;
+    display: flex;
+    justify-content: center;
+
 }
